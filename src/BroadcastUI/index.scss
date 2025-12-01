@@ -1,0 +1,43 @@
+.broadcastUI {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+  border: 1px solid var(--red);
+  border-radius: 4px;
+  background: rgba(255, 120, 117, 0.1);
+  padding: 0 12px;
+  height: 32px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: normal;
+  &-content {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    &-item {
+      &-text {
+        height: 30px;
+        overflow: hidden;
+        font-size: 12px;
+        line-height: 30px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+  &-more {
+    cursor: pointer;
+    color: var(--red);
+    .ant-popover-inner {
+      padding: 0;
+      .broadcastUI-popover {
+        box-sizing: border-box;
+        padding: 12px;
+        color: #fff;
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.tableOperateUI {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  &-item {
+    display: flex;
+    align-items: center;
+    &-divider {
+      box-sizing: border-box;
+      padding: 0 6px;
+      color: #ccc;
+    }
+  }
+  &-more {
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-left: 6px;
+    color: #7e7e7e;
+    font-size: 18px;
+  }
+}
+.tableOperateUI-popover .ant-popover-inner {
+  padding: 6px 8px;
+}

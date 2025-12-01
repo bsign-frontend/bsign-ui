@@ -1,0 +1,65 @@
+.imageUI {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  .ant-image {
+    width: 100%;
+    height: 100%;
+  }
+  .ant-image-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &-mask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    &-left,
+    &-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+    }
+    .imageUI-mask-name {
+      margin-left: 2px;
+    }
+    .imageUI-mask-delete {
+      margin-left: 2px;
+      color: var(--red);
+    }
+  }
+
+  &-toolbar {
+    position: fixed;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0px 24px;
+    color: #fff;
+    font-size: 20px;
+    .anticon {
+      cursor: pointer;
+      padding: 12px;
+    }
+    .anticon[disabled] {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+    .anticon:hover {
+      opacity: 0.3;
+    }
+  }
+}
+
+.ant-image-preview-footer {
+  .ant-image-preview-progress {
+    margin-bottom: 0;
+  }
+}

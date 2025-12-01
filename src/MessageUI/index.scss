@@ -1,0 +1,50 @@
+.messageUI {
+  top: 5%;
+  .messageUI-notice-wrapper {
+    .messageUI-notice-content {
+      padding: 0;
+
+      .messageUI-success,
+      .messageUI-error,
+      .messageUI-info,
+      .messageUI-warning,
+      .messageUI-loading {
+        > .anticon {
+          color: #fff;
+          font-size: 18px;
+        }
+      }
+      .messageUI-custom-content {
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        font-family: var(--fontFamily);
+      }
+      .anticon-check-circle,
+      .anticon-close-circle {
+        color: #fff;
+      }
+      .messageUI-custom-content {
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 20px 20px;
+      }
+      .messageUI-success {
+        background-color: #38b865;
+      }
+      .messageUI-error {
+        background-color: var(--red);
+      }
+      .messageUI-info {
+        background-color: #2e64fa;
+      }
+      .messageUI-warning {
+        background-color: #faad14;
+      }
+      .messageUI-loading {
+        background-color: #2e64fa;
+      }
+    }
+  }
+}

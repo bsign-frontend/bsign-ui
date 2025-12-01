@@ -1,0 +1,13 @@
+.selectUI {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  .ant-select {
+    flex: 1;
+  }
+  &-copy {
+    cursor: pointer;
+    color: var(--themeColor);
+  }
+}

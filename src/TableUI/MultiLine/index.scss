@@ -1,0 +1,25 @@
+.tableMultiLineUI {
+  width: 100%;
+  .ant-table-tbody > tr > td {
+    padding: 0;
+  }
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f0f0f0;
+    width: 100%;
+    min-height: 35px;
+    &-value {
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  &-item:last-child {
+    border-bottom: none;
+  }
+}

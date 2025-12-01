@@ -1,0 +1,41 @@
+.tagTitleUI {
+  display: inline-flex;
+  font-size: 12px;
+  line-height: 14px;
+  &-title {
+    box-sizing: border-box;
+    border-radius: 4px 0 0 4px;
+    padding: 4px 8px;
+    color: #fff;
+  }
+
+  &-content {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    box-sizing: border-box;
+    border-radius: 0 4px 4px 0;
+    padding: 4px 8px;
+  }
+}
+
+.tagUI {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  line-height: 14px;
+}
+.tagUI-large {
+  gap: 4px;
+  box-sizing: border-box;
+  padding: 6px 12px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
