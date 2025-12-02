@@ -22,7 +22,7 @@ const RichEditorUI = (props: PropsType) => {
         }
       }}
       // 指向 public 目录下的 tinymce 核心文件，启用自托管模式
-      tinymceScriptSrc="/bsign-ui/tinymce/tinymce.min.js"
+      tinymceScriptSrc="https://file.51qianqian.cn/frontend-file/tinymce/tinymce.min.js"
       // 声明使用 GPL 协议，消除 v7+ 版本的无许可警告
       licenseKey="gpl"
       // 编辑器初始化完成后，将实例存储到 ref 中

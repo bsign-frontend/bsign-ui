@@ -1,6 +1,6 @@
 {
   "name": "bsign-ui",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A react library developed with dumi",
   "license": "MIT",
   "module": "dist/index.js",
@@ -45,14 +45,14 @@
     "@dnd-kit/sortable": "^8.0.0",
     "@dnd-kit/utilities": "^3.2.2",
     "@icon-park/react": "^1.4.2",
-    "@tinymce/tinymce-react": "^6.3.0",
+    "@tinymce/tinymce-react": "6.3.0",
     "classnames": "^2.5.1",
     "dayjs": "^1.11.11",
     "lodash": "^4.17.21",
     "react-countup": "^6.5.3",
     "react-draggable": "^4.4.6",
     "react-router-dom": "^6.13.0",
-    "tinymce": "^8.2.2"
+    "tinymce": "8.2.2"
   },
   "devDependencies": {
     "@ant-design/icons": "^6.1.0",
