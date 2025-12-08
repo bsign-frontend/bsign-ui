@@ -30,7 +30,7 @@ const PreviewGroupUI: React.FC<PreviewGroupUIPropsType> = ({ preview, children, 
   };
 
   const previewConfig: PreviewGroupUIPropsType['preview'] = {
-    actionsRender: (
+    toolbarRender: (
       _,
       {
         transform: { scale },

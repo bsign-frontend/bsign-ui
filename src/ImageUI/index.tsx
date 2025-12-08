@@ -93,8 +93,8 @@ const ImageUI = (props: ImageUIProps) => {
     }
   };
   const previewConfig: ImageProps['preview'] = {
-    cover: renderMask(),
-    actionsRender: (
+    mask: renderMask(),
+    toolbarRender: (
       _,
       { transform: { scale }, actions: { onFlipY, onFlipX, onRotateLeft, onRotateRight, onZoomOut, onZoomIn, onReset } }
     ) => (

@@ -3,14 +3,14 @@ import { Button, ButtonProps } from 'antd';
 import './index.scss';
 
 interface ButtonUIProps extends ButtonProps {
-  iconPlacement?: 'start' | 'end';
+  iconPosition?: 'start' | 'end';
   children?: React.ReactNode;
 }
 
 const ButtonUI: React.FC<ButtonUIProps> = (props) => {
-  const { children, iconPlacement = 'end', ...otherProps } = props;
+  const { children, iconPosition = 'end', ...otherProps } = props;
   return (
-    <Button iconPlacement={iconPlacement} {...otherProps}>
+    <Button iconPosition={iconPosition} {...otherProps}>
       {children}
     </Button>
   );

@@ -83,7 +83,7 @@ import { ButtonUI, IconUI } from 'bsign-ui';
 export default () => (
   <Space>
     <ButtonUI icon={<IconUI name="Export" />}>按钮</ButtonUI>
-    <ButtonUI icon={<IconUI name="Export" />} iconPlacement="start">
+    <ButtonUI icon={<IconUI name="Export" />} iconPosition="start">
       按钮
     </ButtonUI>
   </Space>

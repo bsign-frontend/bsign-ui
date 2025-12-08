@@ -116,7 +116,7 @@ function TableUIInner<TRecord = any, TVessel extends TableUI_VesselType = TableU
           simplePagination
             ? false
             : {
-                placement: ['bottomCenter'],
+                position: ['bottomCenter'],
                 showSizeChanger: true,
                 showQuickJumper: true,
                 current: tableData?.current,
@@ -164,7 +164,7 @@ function TableUIInner<TRecord = any, TVessel extends TableUI_VesselType = TableU
           {tableData?.total && <div>共 {tableData?.total} 条</div>}
           <ButtonUI
             icon={<IconUI name="Left" />}
-            iconPlacement="start"
+            iconPosition="start"
             disabled={!tableData?.last}
             onClick={() => handleSimplePaginationClick('last')}
           >

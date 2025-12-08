@@ -23,7 +23,7 @@ const BroadcastUI = (props: PropsType) => {
       <IconUI name="Help" theme="filled" fill="var(--red)" size="18" />
       {items?.length > 0 && (
         <div className="broadcastUI-content">
-          <Carousel autoplay={items?.length > 1} dots={false} dotPlacement="start" autoplaySpeed={5000} adaptiveHeight>
+          <Carousel autoplay={items?.length > 1} dots={false} dotPosition="left" autoplaySpeed={5000} adaptiveHeight>
             {items.map((item: string | number, index: number) => (
               <div className="broadcastUI-content-item" key={index}>
                 <div className="broadcastUI-content-item-text" style={{ textAlign: textAlign }}>

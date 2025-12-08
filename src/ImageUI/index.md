@@ -66,8 +66,8 @@ import { Button, Space } from 'antd';
 import { ImageUI } from 'bsign-ui';
 
 const App: React.FC = () => {
-  const [open, setOpen] = useState(false);
-  const [singleOpen, setSingleOpen] = useState(false);
+  const [visible, setVisible] = useState(false);
+  const [singleVisible, setSingleVsible] = useState(false);
 
   const items = [
     'https://gw.alipayobjects.com/zos/antfincdn/LlvErxo8H9/photo-1503185912284-5271ff81b9a8.webp',
@@ -79,18 +79,18 @@ const App: React.FC = () => {
   return (
     <>
       <Space>
-        <Button type="primary" onClick={() => setOpen(true)}>
+        <Button type="primary" onClick={() => setVisible(true)}>
           预览-多张图片
         </Button>
-        <Button type="primary" onClick={() => setSingleOpen(true)}>
+        <Button type="primary" onClick={() => setSingleVsible(true)}>
           预览-单张图片
         </Button>
       </Space>
       <Space>
         <ImageUI.PreviewGroupUI
           preview={{
-            open,
-            onOpenChange: (value) => setOpen(value),
+            visible,
+            onVisibleChange: (value) => setVisible(value),
           }}
           items={items}
         />
@@ -98,9 +98,9 @@ const App: React.FC = () => {
       <ImageUI
         style={{ display: 'none' }}
         preview={{
-          open: singleOpen,
+          visible: singleVisible,
           src: src,
-          onOpenChange: (value) => setSingleOpen(value),
+          onVisibleChange: (value) => setSingleVsible(value),
         }}
         src={src}
         width={200}
