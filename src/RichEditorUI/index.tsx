@@ -74,10 +74,34 @@ const RichEditorUI = (props: PropsType) => {
           'bold italic underline strikethrough | ' +
           'alignleft aligncenter alignright alignjustify | ' +
           'outdent indent | bullist numlist | ' +
+          'pagebreak | ' +
           'link image media table codesample | ' +
           'forecolor backcolor emoticons | ' +
-          'removeformat | fullscreen | print preview | code help' +
-          'pagebreak',
+          'removeformat | fullscreen | print preview | code help',
+
+        // 分页符配置：确保生成的 HTML 包含能在 PDF 生效的 CSS 属性
+        pagebreak_separator: '<div class="page-break" style="page-break-before: always;"></div>',
+        pagebreak_split_block: true,
+
+        // 注入编辑器内部样式：在编辑时显示虚线，并在打印/导出时触发换页
+        content_style: `
+          .mce-pagebreak {
+            cursor: default;
+            display: block;
+            border: 0;
+            width: 100%;
+            height: 5px;
+            border-bottom: 1px dashed red;
+            margin-top: 15px;
+            page-break-before: always !important;
+          }
+          @media print {
+            .page-break { 
+              page-break-before: always !important; 
+              break-before: page;
+            }
+          }
+        `,
 
         table_use_colgroups: true, // 使用 colgroups 提高表格宽度控制的准确性
         table_default_attributes: {
